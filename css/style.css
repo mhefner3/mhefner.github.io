@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #E6E6FA; /* Light Lilac */
+    color: #4B0082;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8A2BE2;;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #4B0082;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8A2BE2; 
+    color: #E0FFFF;
+}
+
+/* Dropdown */
+nav ul li ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #8A2BE2;
+    border-radius: 10px;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 150px;
+}
+
+nav ul li:hover > ul.dropdown {
+    display: block;
+}
+
+nav ul li ul.dropdown li {
+    margin-bottom: 5px;
+}
+
+/* Content Sections */
+.content-section {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+}
+
+/* Floating Bubbles */
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -15px); }
+    100% { transform: translate(0, 0); }
+}
+
+.bubble {
+    position: fixed;
+    background-color: rgba(255, 105, 180, 0.3); /* Slightly transparent pink */
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubble1 {
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    left: 10%;
+}
+
+.bubble2 {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.bubble3 {
+    width: 40px;
+    height: 40px;
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #4B0082;
+}
+.trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bc9de4; 
+    pointer-events: none;
+    opacity: 0.7;
+    transition: all 1s ease;
+}
+
+.banner {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    background-image: url('IMG_2424.JPG');
+    background-size: cover;
+    background-position: center; /* Adjust this value as needed */
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#twitter-feed {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#twitter-feed h2 {
+    margin-bottom: 15px;
+    color: #8A2BE2; /* Matching your site's color scheme */
+}
+
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-item h3 {
+    color: #FF69B4;
+    margin-bottom: 10px;
+}
+
+.publication-item p {
+    margin-bottom: 5px;
+}
+
+.publication-item .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4B0082;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.publication-item .read-more:hover {
+    text-decoration: underline;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8A2BE2; /* Your purple color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #9932CC; /* A slightly different shade for hover effect */
+}
+
+
+
