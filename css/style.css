@@ -147,68 +147,37 @@ footer {
     transition: all 1s ease;
 }
 
+.profile-section {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align the profile picture and text */
+    justify-content: flex-start; /* Ensure everything stays aligned to the left */
+    width: auto; /* Let content determine width */
+    max-width: fit-content; /* Fit only the size of the content */
+    margin: 20px; /* Add spacing around the section */
+    gap: 15px; /* Remove extra space between items */
+}
 .banner {
-    width: 100%;
-    height: 300px; /* Adjust as needed */
-    background-image: url('IMG_2424.JPG');
+    width: 180px; /* Smaller width */
+    height: 180px; /* Smaller height */
+    border-radius: 50%; /* Makes the container circular */
+    background-image: url('IMG_9845_VSCO.JPG');
     background-size: cover;
     background-position: center; /* Adjust this value as needed */
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures the image stays within the circular bounds */
+    display: flex; /* Ensure internal alignment if needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    margin: 0; /* Remove unnecessary margins */
+}
+.profile-name {
+    font-size: 1.8rem; /* Adjust font size as needed */
+    color: #4B0082; /* Optional: match your color scheme */
+    margin-left: 10px; /* Move the text closer to the image */
+    margin: 0; /* Remove default margin for the heading */
 }
 
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-#twitter-feed {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#twitter-feed h2 {
-    margin-bottom: 15px;
-    color: #8A2BE2; /* Matching your site's color scheme */
-}
-
-.publication-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.publication-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.publication-item h3 {
-    color: #FF69B4;
-    margin-bottom: 10px;
-}
-
-.publication-item p {
-    margin-bottom: 5px;
-}
-
-.publication-item .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #4B0082;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.publication-item .read-more:hover {
-    text-decoration: underline;
+#home p {
+    margin-bottom: 15px; /* Adds space between paragraphs */
+    line-height: 1.6; /* Improves readability */
 }
 
 .social-button {
