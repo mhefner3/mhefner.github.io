@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #E6E6FA; /* Light Lilac */
-    color: #4B0082;
+    background-color: #DFF0D8; /* Light Lilac */
+    color: #1E4D2B;
     line-height: 1.6;
 }
 
@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-    color: #8A2BE2;;
+    color: #2E8B57;;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4B0082;
+    color: #1E4D2B;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 10px;
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #8A2BE2; 
+    background-color: #4CAF50; 
     color: #E0FFFF;
 }
 
@@ -63,7 +63,7 @@ nav ul li a:hover {
 nav ul li ul.dropdown {
     display: none;
     position: absolute;
-    background-color: #8A2BE2;
+    background-color: #4CAF50;
     border-radius: 10px;
     padding: 10px;
     top: 100%;
@@ -103,45 +103,23 @@ nav ul li ul.dropdown li {
 
 .bubble {
     position: fixed;
-    background-color: rgba(255, 105, 180, 0.3); /* Slightly transparent pink */
+    background-color: rgba(144, 238, 144, 0.3); /* Slightly transparent pink */
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
 }
 
-.bubble1 {
-    width: 50px;
-    height: 50px;
-    top: 10%;
-    left: 10%;
-}
-
-.bubble2 {
-    width: 70px;
-    height: 70px;
-    top: 50%;
-    right: 15%;
-    animation-delay: 1s;
-}
-
-.bubble3 {
-    width: 40px;
-    height: 40px;
-    bottom: 20%;
-    left: 20%;
-    animation-delay: 2s;
-}
 
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #4B0082;
+    color: #1E4D2B;
 }
 .trail {
     position: fixed;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #bc9de4; 
+    background-color: #A9DFBF; 
     pointer-events: none;
     opacity: 0.7;
     transition: all 1s ease;
@@ -170,7 +148,7 @@ footer {
 }
 .profile-name {
     font-size: 1.8rem; /* Adjust font size as needed */
-    color: #4B0082; /* Optional: match your color scheme */
+    color: #1E4D2B; /* Optional: match your color scheme */
     margin-left: 10px; /* Move the text closer to the image */
     margin: 0; /* Remove default margin for the heading */
 }
@@ -183,7 +161,7 @@ footer {
 .social-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #8A2BE2; /* Your purple color */
+    background-color: #2E8B57; /* Your purple color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -192,7 +170,7 @@ footer {
 }
 
 .social-button:hover {
-    background-color: #9932CC; /* A slightly different shade for hover effect */
+    background-color: #228B22; /* A slightly different shade for hover effect */
 }
 
 
