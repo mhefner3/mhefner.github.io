@@ -6,66 +6,182 @@
     <title>Michelle Hefner</title>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 2.5rem;
+            margin: 2rem 0 1.5rem 0;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .profile-photo-placeholder {
+            flex-shrink: 0;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 0.85rem;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            border: 3px solid #ddd;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h1 {
+            margin-top: 0;
+        }
+
+        .profile-meta {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid #9B1E2E;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-family: 'Quicksand', sans-serif;
+            color: #9B1E2E;
+            text-decoration: none;
+            transition: border-color 0.2s, color 0.2s, background 0.2s;
+        }
+
+        .social-link:hover {
+            background: #9B1E2E;
+            color: #fff;
+        }
+
+        .social-link svg {
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 600px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
-    
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://scholar.google.com/citations?user=zAmKqoIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-                <li><a href="https://github.com/mhefner3/mhefner.github.io/tree/main/posters" target="_blank">Posters</a></li>
-                <li><a href="https://www.researchgate.net/profile/Michelle_Hefner" target="_blank">ResearchGate</a></li>
-            </ul>
-        </nav>
-
-        <div class="profile-section">
-            <div class="banner"></div>
-            <div class="profile-details">
-                <h1 class="profile-name">Michelle Hefner</h1>
-                <p class="profile-description">
-                    PhD student, CIMCYC, University of Granada <br>
-                    Co-supervision from the HIP lab, University of Oxford <br>
-                    <a href="mailto:mhefner@ugr.es" class="email-link">mhefner@ugr.es</a>
-                </p>
-            </div>
-        </div>        
-        
 
         <main>
-            <section id="home" class="content-section">
-                <h2>About Me</h2>
-                <p>
-                    I'm Michelle and I'm in the second year of my PhD in Psychology at the University of Granada with co-supervision from the HIP lab at the University of Oxford. My research explores how spatial memory and categorization learning interact, digging into the neural mechanisms behind them both in humans and artifical networks. I'm interested generally in these concepts of cognitive maps and how we may use space as a scaffold for learning and memory. I also have a strong interest in computational modeling and machine learning and how these can be used to understand the brain and cognition.
-                </p>
-                <p>
-                    Before this, I studied Biomedical Engineering and Chemical & Biological Engineering at Colorado State University. As an undergrad I was a ressearch assistant in the BRAiN lab in the department of Human Development and Family Studies where I got hooked on using machine learning and data science to understand the role of white matter in cognitive aging and brain function. That passion also led me to pursue a minor in Mathematics.
-                </p>
-                <p>
-                    Along the way, I’ve worked in both academia and industry, from research at Colorado State to a data science/engineering role at a SaaS/AI startup in Boulder, CO. I’ve built expertise in working with large datasets, neuroimaging analysis, computational modeling, product development, and designing + programming online behavioral experiments.
-                </p>
+            <div class="profile-layout">
 
-            </section>
+                <div class="profile-photo-col">
+                    <img src="css/IMG_9845_VSCO.JPG" alt="Michelle Hefner" class="profile-photo">
+                </div>
+
+                <div class="profile-content-col">
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=zAmKqoIAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                            <li><a href="https://github.com/mhefner3/mhefner.github.io/tree/main/posters" target="_blank">Posters</a></li>
+                                    <li><a href="mailto:mhefner@ugr.es">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <section id="home" class="content-section">
+                        <h2>Michelle B. Hefner</h2>
+                        <p class="profile-meta">
+                            Mind, Brain and Behavior Research Center - University of Granada, Spain<br>
+                            <a href="mailto:mhefner@ugr.es" class="email-link">mhefner@ugr.es</a>
+                        </p>
+                        <p>
+                            I am a PhD student in Psychology (Cognitive Neuroscience) at the University of Granada (CIMCYC), and I have the privilege of being supervised by Professors Maria Ruz and Christopher Summerfield (HIP Lab, University of Oxford). My doctoral research investigates the interplay between spatial memory and categorization learning, with a particular focus on uncovering the neural and computational mechanisms that underlie these processes in both humans and artificial networks. More broadly, I am interested in the concept of cognitive maps and the role of spatial structure as a scaffold for learning and memory.
+                        </p>
+                        <p>
+                            My work sits at the intersection of cognitive neuroscience and artificial intelligence, drawing on behavioral experimentation, neuroimaging (particularly fMRI), and computational modeling - including neural network models. Prior to my doctoral training, I completed dual Bachelor's degrees in Biomedical Engineering and Chemical &amp; Biological Engineering at Colorado State University, where I also pursued a minor in Mathematics. As an undergraduate researcher in the BRAiN Lab (Department of Human Development and Family Studies), I developed expertise in multimodal diffusion MRI analysis and applied machine learning methods to study white matter aging and brain function. This interdisciplinary foundation spanning engineering, mathematics, and neuroscience, continues to motivate my approach to research.
+                        </p>
+                        <p>
+                            Outside of my core doctoral research, I've had the chance to work across a pretty varied range of areas: from public health and aging research at NYU, to 3D fluorescence microscopy as an undergrad, to a stint as a data scientist at an AI startup in Boulder. I like to think it keeps things interesting.
+                        </p>
+                    </section>
+
+                    <section id="social-media" class="content-section">
+                        <h2>Connect with Me</h2>
+                        <div class="social-links">
+                            <a href="https://bsky.app/profile/mhefner.bsky.social" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3c1.657 0 3 1.12 3 2.5S13.657 10 12 10 9 8.88 9 7.5 10.343 5 12 5zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08C16.71 17.72 14.5 19 12 19z"/>
+                                </svg>
+                                Bluesky
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=zAmKqoIAAAAJ&hl=en" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                                </svg>
+                                Google Scholar
+                            </a>
+                            <a href="https://github.com/mhefner3" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Michelle_Hefner" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.586 0H4.414A4.414 4.414 0 0 0 0 4.414v15.172A4.414 4.414 0 0 0 4.414 24h15.172A4.414 4.414 0 0 0 24 19.586V4.414A4.414 4.414 0 0 0 19.586 0zm-7.042 17.25h-1.683v-4.542H9.375v4.542H7.692V6.75h1.683v4.416h1.486V6.75h1.683v10.5zm4.748 0h-1.417l-2.025-4.083v4.083h-1.558V6.75h1.683l1.8 3.825V6.75h1.517v10.5z"/>
+                                </svg>
+                                ResearchGate
+                            </a>
+                            <a href="https://www.linkedin.com/in/mhefner3/" target="_blank" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
         </main>
-        
-
-        <section id="social-media" class="content-section">
-            <h2>Connect with Me</h2>
-            <p>Follow me on Bluesky for updates and insights:</p>
-            <a href="https://bsky.app/profile/mhefner.bsky.social" target="_blank" class="social-button">
-                Follow @mhefner.bsky.social on Bluesky
-            </a>
-        </section>        
-        
 
         <footer>
-            <p>“The man who says he can and the man who says he can’t are both correct” - Confucius</p>
+            <p>© 2025 Michelle Hefner 🏳️‍🌈</p>
         </footer>
-        
-    </div>
 
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
-
