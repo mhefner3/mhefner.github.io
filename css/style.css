@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #DFF0D8; /* Light Lilac */
-    color: #1E4D2B;
+    background-color: #F5E6E8;
+    color: #2a2a2a;
     line-height: 1.6;
 }
 
@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-    color: #2E8B57;;
+    color: #9B1E2E;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
@@ -33,7 +33,7 @@ nav {
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1E4D2B;
+    color: #9B1E2E;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 10px;
@@ -55,15 +55,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #4CAF50; 
-    color: #E0FFFF;
+    background-color: #9B1E2E;
+    color: #fff;
 }
 
 /* Dropdown */
 nav ul li ul.dropdown {
     display: none;
     position: absolute;
-    background-color: #4CAF50;
+    background-color: #9B1E2E;
     border-radius: 10px;
     padding: 10px;
     top: 100%;
@@ -84,7 +84,7 @@ nav ul li ul.dropdown li {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     padding: 20px;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -103,65 +103,67 @@ nav ul li ul.dropdown li {
 
 .bubble {
     position: fixed;
-    background-color: rgba(144, 238, 144, 0.3); /* Slightly transparent pink */
+    background-color: rgba(155, 30, 46, 0.15);
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
 }
 
-
 footer {
     text-align: center;
     margin-top: 20px;
-    color: #1E4D2B;
+    color: #2a2a2a;
 }
+
 .trail {
     position: fixed;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #A9DFBF; 
+    background-color: #9B1E2E;
     pointer-events: none;
     opacity: 0.7;
     transition: all 1s ease;
 }
 
 .profile-section {
-    display: flex; /* Align items in a row */
-    align-items: center; /* Vertically align the profile picture and text */
-    justify-content: flex-start; /* Ensure everything stays aligned to the left */
-    width: auto; /* Let content determine width */
-    max-width: fit-content; /* Fit only the size of the content */
-    margin: 20px; /* Add spacing around the section */
-    gap: 15px; /* Remove extra space between items */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    max-width: fit-content;
+    margin: 20px;
+    gap: 15px;
 }
+
 .banner {
-    width: 180px; /* Smaller width */
-    height: 180px; /* Smaller height */
-    border-radius: 50%; /* Makes the container circular */
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     background-image: url('IMG_9845_VSCO.JPG');
     background-size: cover;
-    background-position: center; /* Adjust this value as needed */
-    overflow: hidden; /* Ensures the image stays within the circular bounds */
-    display: flex; /* Ensure internal alignment if needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    margin: 0; /* Remove unnecessary margins */
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
+
 .profile-name {
-    font-size: 1.8rem; /* Adjust font size as needed */
-    color: #1E4D2B; /* Optional: match your color scheme */
-    margin-left: 10px; /* Move the text closer to the image */
-    margin: 0; /* Remove default margin for the heading */
+    font-size: 1.8rem;
+    color: #9B1E2E;
+    margin-left: 10px;
+    margin: 0;
 }
 
 #home p {
-    margin-bottom: 15px; /* Adds space between paragraphs */
-    line-height: 1.6; /* Improves readability */
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .social-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2E8B57; /* Your purple color */
+    background-color: #9B1E2E;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -170,8 +172,53 @@ footer {
 }
 
 .social-button:hover {
-    background-color: #228B22; /* A slightly different shade for hover effect */
+    background-color: #7a1623;
 }
 
+.email-link {
+    color: #9B1E2E;
+}
 
+.email-link:hover {
+    color: #7a1623;
+}
 
+.profile-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-photo-col {
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content-col {
+    flex: 1;
+    max-width: 650px;
+}
+
+@media (max-width: 650px) {
+    .profile-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-content-col {
+        max-width: 100%;
+    }
+}
+
+.banner-spacer {
+    flex-shrink: 0;
+    width: 180px; /* matches photo column width */
+}
